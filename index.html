@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transport</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  >
+  <link href="/output.css" rel="stylesheet">
+</head>
+<body class="font-[Inter] bg-white text-slate-900">
+  <header class="flex justify-between items-center p-4 md:px-16 z-10 sticky top-0 bg-white h-16.gitignore">
+    <div class="flex items-center gap-2">
+      <img src="/truck-logo.png" alt="logo" class="h-6" />
+      <h1 class="text-xl font-bold">Transport</h1>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="#" class="hover:text-orange-500 duration-300 ease-in-out">Home</a>
+      <a href="#" class="hover:text-orange-500 duration-300 ease-in-out">About Us</a>
+      <div class="relative group">
+        <button class="hover:text-orange-500 duration-300 ease-in-out">Pages</button>
+      </div>
+      <a href="#" class="hover:text-orange-500 duration-300 ease-in-out">Services</a>
+      <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">Contact
+        Us</a>
+    </nav>
+
+    <button id="menuToggle" class="md:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+  </header>
+
+  <div
+    id="mobileMenu"
+    class="md:hidden hidden flex-col gap-4 bg-white shadow-md p-4 duration-300 ease-in-out sticky top-16"
+  >
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Pages</a>
+    <a href="#">Services</a>
+    <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">Contact Us</a>
+  </div>
+
+  <main class="flex flex-col-reverse md:flex-row items-center px-4 md:px-16 pt-8 md:pt-20 gap-10">
+    <div class="text-center md:text-left max-w-xl">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Full Sustain Cargo Solutions</h2>
+      <p class="text-gray-600 mb-6">We provide services in the field of road, sea, rail, air
+        transportation and a full range of warehousing services.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a
+          href="#"
+          class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded inline-flex items-center gap-2"
+        >
+          Our Services
+          <svg
+            xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+        <a href="#" class="text-blue-800 font-semibold inline-flex items-center gap-2">
+          Learn More
+          <svg
+            xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 7l5 5m0 0l-5 5m5-5H6"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <img
+      src="/public/62e22667a9fa409eabf60d5f_Banner-Image.png" alt="truck" class="w-full md:w-1/2"
+    />
+  </main>
+
+  <section class="flex flex-col md:flex-row gap-8 justify-center px-4 md:px-16 py-12">
+    <div class="flex flex-col items-center">
+      <div class="bg-orange-100 p-4 rounded mb-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 10l4.553 2.276A2 2 0 0121 14.118V17a2 2 0 01-2 2h-1m-4 0H6a2 2 0 01-2-2v-2.882a2 2 0 01.447-1.264L9 10m6 0V6a3 3 0 00-6 0v4m6 0H9"
+          />
+        </svg>
+      </div>
+      <h3 class="font-bold text-lg mb-1">Real Time Tracking</h3>
+      <p class="text-center text-gray-600">Laboriosam, Nisi Ut Aliquid Commodi Consequatur</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <div class="bg-orange-100 p-4 rounded mb-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      </div>
+      <h3 class="font-bold text-lg mb-1">Fast Logistic</h3>
+      <p class="text-center text-gray-600">The More Obscure Latin Words, Consectetur</p>
+    </div>
+  </section>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
+</body>
+</html>
