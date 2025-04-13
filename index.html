@@ -11,8 +11,8 @@
   <link href="/output.css" rel="stylesheet">
 </head>
 <body class="font-[Inter] bg-white text-slate-900">
-  <header class="relative z-10 sticky top-0 bg-white backdrop-blur-xs">
-    <div class="flex justify-between items-center p-4 md:px-16 h-12">
+  <header class="relative z-10 sticky top-0 bg-white backdrop-blur-xs max-w-7xl mx-auto">
+    <div class="flex justify-between items-center p-4 md:px-16 h-12 md:h-fit">
       <div class="flex items-center gap-2">
         <img src="/truck-logo.png" alt="logo" class="h-6" />
         <h1 class="text-xl font-bold">Transport</h1>
@@ -30,10 +30,14 @@
       </nav>
 
       <button id="menuToggle" class="md:hidden">
-        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-          <path id="menuPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
+        <svg
+          id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            id="menuPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
       </button>
     </div>
@@ -46,81 +50,88 @@
       <a href="#">About Us</a>
       <a href="#">Pages</a>
       <a href="#">Services</a>
-      <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 mb-4 rounded">Contact Us</a>
+      <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 mb-4 rounded">Contact
+        Us</a>
     </div>
   </header>
 
 
-  <main class="flex flex-col-reverse md:flex-row items-center px-4 md:px-16 pt-8 md:pt-20 gap-10">
-    <div class="text-center md:text-left max-w-xl">
+  <section class="flex flex-col md:flex-row items-center px-4 md:px-16 py-10 md:py-20 gap-10 relative max-w-7xl mx-auto overflow-hidden">
+    <div class="text-center md:text-left w-1/2">
       <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Full Sustain Cargo Solutions</h2>
+
       <p class="text-gray-600 mb-6">We provide services in the field of road, sea, rail, air
         transportation and a full range of warehousing services.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
+      <div class="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start">
         <a
           href="#"
-          class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded inline-flex items-center gap-2"
+          class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded inline-flex items-center gap-2 w-fit"
         >
           Our Services
           <svg
-            xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+            class="min-w-6 w-6 fill-[#e8eaed]"
           >
-            <path
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
+            <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
           </svg>
         </a>
+
         <a href="#" class="text-blue-800 font-semibold inline-flex items-center gap-2">
           Learn More
           <svg
-            xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none"
             stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" class="min-w-6 w-6"
           >
+            <path d="m6.875 5.625 1.875 1.875 -1.875 1.875" stroke-width="1"></path>
             <path
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M13 7l5 5m0 0l-5 5m5-5H6"
-            />
+              d="M1.875 7.5a5.625 5.625 0 1 0 11.25 0 5.625 5.625 0 0 0 -11.25 0z" stroke-width="1"
+            ></path>
           </svg>
         </a>
       </div>
-    </div>
-    <img
-      src="/public/62e22667a9fa409eabf60d5f_Banner-Image.png" alt="truck" class="w-full md:w-1/2"
-    />
-  </main>
 
-  <section class="flex flex-col md:flex-row gap-8 justify-center px-4 md:px-16 py-12">
-    <div class="flex flex-col items-center">
-      <div class="bg-orange-100 p-4 rounded mb-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M15 10l4.553 2.276A2 2 0 0121 14.118V17a2 2 0 01-2 2h-1m-4 0H6a2 2 0 01-2-2v-2.882a2 2 0 01.447-1.264L9 10m6 0V6a3 3 0 00-6 0v4m6 0H9"
-          />
-        </svg>
+      <div class="grid sm:grid-cols-2 gap-8 py-8 sm:py-16 text-center">
+        <div class="flex flex-col items-center">
+          <div class="bg-orange-100 p-4 rounded mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 10l4.553 2.276A2 2 0 0121 14.118V17a2 2 0 01-2 2h-1m-4 0H6a2 2 0 01-2-2v-2.882a2 2 0 01.447-1.264L9 10m6 0V6a3 3 0 00-6 0v4m6 0H9"
+              />
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-1">Real Time Tracking</h3>
+          <p class="text-center text-gray-600">Laboriosam, Nisi Ut Aliquid Commodi Consequatur</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-orange-100 p-4 rounded mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-1">Fast Logistic</h3>
+          <p class="text-center text-gray-600">The More Obscure Latin Words, Consectetur</p>
+        </div>
       </div>
-      <h3 class="font-bold text-lg mb-1">Real Time Tracking</h3>
-      <p class="text-center text-gray-600">Laboriosam, Nisi Ut Aliquid Commodi Consequatur</p>
     </div>
-    <div class="flex flex-col items-center">
-      <div class="bg-orange-100 p-4 rounded mb-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M13 10V3L4 14h7v7l9-11h-7z"
-          />
-        </svg>
-      </div>
-      <h3 class="font-bold text-lg mb-1">Fast Logistic</h3>
-      <p class="text-center text-gray-600">The More Obscure Latin Words, Consectetur</p>
+
+    <img src="/public/bg.png" alt="background" class="-z-10 absolute right-16 top-0 hidden md:block h-full max-w-1/2" />
+
+    <div class="relative sm:w-2/3">
+      <img src="/public/truck.png" alt="truck" class="w-full" />
+      <img src="/public/shadow.png" alt="shadow" class="w-full absolute -bottom-[11%] -z-10" />
     </div>
   </section>
 
@@ -135,10 +146,10 @@
       isOpen = !isOpen;
       if (isOpen) {
         mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
-        menuPath.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // X icon
+        menuPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
       } else {
         mobileMenu.style.maxHeight = '0';
-        menuPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Hamburger icon
+        menuPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
       }
     });
 
