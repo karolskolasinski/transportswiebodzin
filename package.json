@@ -1,7 +1,7 @@
 {
-  "name": "transport-one",
+  "name": "phu-igor",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
