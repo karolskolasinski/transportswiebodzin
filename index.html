@@ -10,14 +10,14 @@
   >
   <link href="/output.css" rel="stylesheet">
 </head>
-<body class="font-[Inter] bg-white text-slate-900">
-  <header class="relative z-10 sticky top-0 bg-white max-w-7xl mx-auto">
-    <div class="flex justify-between items-center p-4 md:px-16">
+<body class="bg-white text-slate-900">
+  <header class="relative z-10 sticky top-0 bg-white">
+    <div class="flex justify-between items-center p-4 md:px-16 max-w-7xl mx-auto">
       <div class="flex items-center gap-2">
         <a href="/index">
           <img src="/logo.svg" alt="logo" class="w-28 h-fit" />
         </a>
-        <h1 class="text-sm font-bold uppercase hidden">Transport Świebodzin</h1>
+        <h1 class="text-sm font-bold uppercase hidden md:inline">Transport Świebodzin</h1>
       </div>
 
       <nav class="hidden md:flex items-center gap-6">
@@ -99,35 +99,35 @@
 
       <div class="grid sm:grid-cols-2 gap-8 py-8 sm:py-16 text-center">
         <div class="flex flex-col items-center">
-          <div class="bg-orange-100 p-4 rounded mb-2">
+          <div class="bg-orange-50 p-4 rounded mb-2">
             <svg
-              xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+              class="h-6 w-6"
             >
               <path
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 10l4.553 2.276A2 2 0 0121 14.118V17a2 2 0 01-2 2h-1m-4 0H6a2 2 0 01-2-2v-2.882a2 2 0 01.447-1.264L9 10m6 0V6a3 3 0 00-6 0v4m6 0H9"
+                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"
               />
             </svg>
           </div>
-          <h3 class="font-bold text-lg mb-1">Real Time Tracking</h3>
-          <p class="text-center text-gray-600">Laboriosam, Nisi Ut Aliquid Commodi Consequatur</p>
+          <h3 class="font-bold text-lg mb-1">Niezawodność i terminowość</h3>
+          <p class="text-center text-gray-600">Działamy 24/7 – zawsze na czas, zawsze gotowi do
+            działania, nawet w najtrudniejszych warunkach.</p>
         </div>
 
         <div class="flex flex-col items-center">
-          <div class="bg-orange-100 p-4 rounded mb-2">
+          <div class="bg-orange-50 p-4 rounded mb-2">
             <svg
-              xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+              class="h-6 w-6"
             >
               <path
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"
+                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q41-45 62.5-100.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z"
               />
             </svg>
           </div>
-          <h3 class="font-bold text-lg mb-1">Fast Logistic</h3>
-          <p class="text-center text-gray-600">The More Obscure Latin Words, Consectetur</p>
+          <h3 class="font-bold text-lg mb-1">Obsługa w całej UE</h3>
+          <p class="text-center text-gray-600">Świadczymy usługi transportowe na terenie całej Unii
+            Europejskiej – sprawnie i bezpiecznie.</p>
         </div>
       </div>
     </div>
@@ -143,40 +143,34 @@
     </div>
   </section>
 
-  <section class=" bg-black text-white">
+  <section class="bg-black text-white">
     <div
-      class="flex flex-col md:flex-row items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20"
+      class="grid lg:grid-cols-2 items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20"
     >
-      <div class="flex-1 p-4 border-r border-r-white">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-8">Why Logizai are the best in the
-          world</h1>
+      <div class="p-4 border-b border-b-gray-300 lg:border-b-0 lg:border-r lg:border-r-gray-300">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-8">Dlaczego warto wybrać PHU IGOR?</h1>
 
-        <p class="mb-8">QUS is a third party logistics provider of integrated freight
-          solutions QLS provides dedicated
-          freight solutions</p>
+        <p class="mb-8">Jesteśmy firmą z doświadczeniem, która stawia na bezpieczeństwo, punktualność
+          i indywidualne podejście do klienta.</p>
       </div>
 
-      <div class="flex-1 flex gap-4">
+      <div class="grid sm:grid-cols-2 gap-4">
         <div
           class="flex flex-col p-2 py-8 hover:-translate-y-3 hover:bg-orange-500 duration-300 ease-in-out"
         >
-          <h2 class="text-2xl md:text-4xl font-extrabold mb-8">Why Logizai are the best in the
-            world</h2>
+          <h2 class="text-2xl font-extrabold mb-8">Bezpieczeństwo ładunku</h2>
 
-          <p>QUS is a third party logistics provider of integrated freight
-            solutions QLS provides dedicated
-            freight solutions</p>
+          <p>Każdy transport traktujemy priorytetowo – dbamy o zabezpieczenie i odpowiednią logistykę
+            przewozu.</p>
         </div>
 
         <div
           class="flex flex-col p-2 py-8 hover:-translate-y-3 hover:bg-orange-500 duration-300 ease-in-out"
         >
-          <h2 class="text-2xl md:text-4xl font-extrabold mb-8">Why Logizai are the best in the
-            world</h2>
+          <h2 class="text-2xl font-extrabold mb-8">Stały kontakt i monitoring</h2>
 
-          <p>QUS is a third party logistics provider of integrated freight
-            solutions QLS provides dedicated
-            freight solutions</p>
+          <p>Pozostajemy w kontakcie przez cały czas trwania usługi – wiesz, gdzie jest Twój
+            ładunek.</p>
         </div>
       </div>
     </div>
@@ -188,7 +182,7 @@
         Special Features thats make you happy and
         cheer up!</h2>
 
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
@@ -299,7 +293,7 @@
       <h2 class="text-3xl md:text-5xl font-extrabold mb-16 border-l-4 border-l-orange-500 pl-12">
         Stats</h2>
 
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
