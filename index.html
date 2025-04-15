@@ -400,9 +400,13 @@
     </section>
 
     <section>
-      <div class="items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20">
+      <div class="items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 pt-10 md:pt-20">
         <div class="flex-1 border-r border-r-white">
-          <h1 class="text-4xl md:text-6xl font-extrabold mb-8">Nasza flota</h1>
+          <h1
+            class="text-4xl md:text-6xl font-extrabold mb-16 border-l-4 border-l-orange-500 pl-12"
+          >
+            Nasza flota
+          </h1>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -458,12 +462,73 @@
         class="flex flex-col md:flex-row items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20"
       >
         <div class="flex-1 border-r border-r-white">
-          <h1 class="text-4xl md:text-6xl font-extrabold mb-8">Najczęściej zadawane pytania</h1>
+          <h1
+            class="text-4xl md:text-6xl font-extrabold mb-16 border-l-4 border-l-orange-500 pl-12"
+          >
+            Najczęściej zadawane pytania
+          </h1>
 
-          <p class="mb-8">
-            Our customer service rating has improved so much ever since we adopted Unicorns. The
-            smooth integrations and easy tracking system.
-          </p>
+          <details class="p-4 mb-4 group w-fit">
+            <summary
+              class="cursor-pointer font-semibold text-xl text-gray-900 flex items-center gap-2"
+            >
+              <svg
+                class="w-5 h-5 text-orange-500 transition-transform duration-200 group-open:rotate-90"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+              Czy oferujecie transport w całej Europie?
+            </summary>
+            <p class="mt-6 ml-9 text-gray-700">
+              Tak, nasze usługi dotyczą całej Unii Europejskiej.
+            </p>
+          </details>
+
+          <details class="p-4 mb-4 group w-fit">
+            <summary
+              class="cursor-pointer font-semibold text-xl text-gray-900 flex items-center gap-2"
+            >
+              <svg
+                class="w-5 h-5 text-orange-500 transition-transform duration-200 group-open:rotate-90"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+              Jaka jest cena za kilometr?
+            </summary>
+            <p class="mt-6 ml-9 text-gray-700">
+              Ceny za kilometr są zróżnicowane i ustalane indywidualnie, w zależności od rodzaju
+              transportu i trasy.
+            </p>
+          </details>
+
+          <details class="p-4 mb-4 group w-fit">
+            <summary
+              class="cursor-pointer font-semibold text-xl text-gray-900 flex items-center gap-2"
+            >
+              <svg
+                class="w-5 h-5 text-orange-500 transition-transform duration-200 group-open:rotate-90"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+              Czy mogę zamówić transport na konkretną godzinę?
+            </summary>
+            <p class="mt-6 ml-9 text-gray-700">
+              Tak, oferujemy elastyczne terminy realizacji. Transport możesz zamówić z wyprzedzeniem
+              na konkretną godzinę – dopasujemy się do Twojego grafiku.
+            </p>
+          </details>
         </div>
       </div>
     </section>
