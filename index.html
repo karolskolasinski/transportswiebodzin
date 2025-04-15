@@ -29,7 +29,7 @@
             href="#contact"
             class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded"
           >
-            Contact Us
+            Kontakt
           </a>
         </nav>
 
@@ -54,7 +54,7 @@
 
       <div
         id="mobileMenu"
-        class="md:hidden flex flex-col gap-4 bg-white px-4 shadow transition-[max-height] duration-300 ease-in-out overflow-hidden max-h-0"
+        class="hidden flex flex-col gap-4 bg-white px-4 shadow"
       >
         <h1 class="font-bold uppercase mt-4 text-gray-700 text-center">Transport Świebodzin</h1>
         <a href="#">Home</a>
@@ -65,7 +65,7 @@
           href="#contact"
           class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 mb-4 rounded"
         >
-          Contact Us
+          Kontakt
         </a>
       </div>
     </header>
@@ -174,7 +174,7 @@
 
     <section class="bg-black text-white">
       <div
-        class="grid lg:grid-cols-2 items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20"
+        class="grid lg:grid-cols-2 items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-20"
       >
         <div class="p-4 border-b border-b-gray-300 lg:border-b-0 lg:border-r lg:border-r-gray-300">
           <h2 class="text-4xl lg:text-6xl font-extrabold mb-8">Dlaczego warto wybrać PHU IGOR?</h2>
@@ -212,7 +212,7 @@
     </section>
 
     <section id="services">
-      <div class="max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 md:px-16 py-20">
         <h2 class="text-3xl md:text-5xl font-extrabold mb-16 border-l-4 border-l-orange-500 pl-12">
           Oferta
         </h2>
@@ -336,7 +336,7 @@
     </section>
 
     <section id="about" class="bg-black text-white">
-      <div class="max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 md:px-16 py-20">
         <h2 class="text-3xl md:text-5xl font-extrabold mb-16 border-l-4 border-l-orange-500 pl-12">
           O nas
         </h2>
@@ -402,7 +402,7 @@
     </section>
 
     <section id="cars">
-      <div class="items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 pt-10 md:pt-20">
+      <div class="items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 pt-20">
         <div class="flex-1 border-r border-r-white">
           <h1
             class="text-4xl md:text-6xl font-extrabold mb-16 border-l-4 border-l-orange-500 pl-12"
@@ -461,7 +461,7 @@
 
     <section>
       <div
-        class="flex flex-col md:flex-row items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20"
+        class="flex flex-col md:flex-row items-center gap-10 max-w-7xl mx-auto px-4 md:px-16 py-20"
       >
         <div class="flex-1 border-r border-r-white">
           <h1
@@ -639,13 +639,13 @@
 
       const openMenu = () => {
         isOpen = true;
-        mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+        mobileMenu.style.display = "flex";
         menuPath.setAttribute("d", "M6 18L18 6M6 6l12 12");
       };
 
       const closeMenu = () => {
         isOpen = false;
-        mobileMenu.style.maxHeight = "0";
+        mobileMenu.style.display = "none";
         menuPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
       };
 
@@ -664,6 +664,8 @@
           closeMenu();
         });
       });
+
+      closeMenu();
     </script>
   </body>
 </html>
