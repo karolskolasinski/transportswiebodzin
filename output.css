@@ -207,8 +207,35 @@
   .right-16 {
     right: calc(var(--spacing) * 16);
   }
-  .-bottom-\[1rem\] {
-    bottom: calc(1rem * -1);
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-14 {
+    bottom: calc(var(--spacing) * 14);
+  }
+  .bottom-16 {
+    bottom: calc(var(--spacing) * 16);
+  }
+  .bottom-18 {
+    bottom: calc(var(--spacing) * 18);
+  }
+  .bottom-20 {
+    bottom: calc(var(--spacing) * 20);
+  }
+  .bottom-24 {
+    bottom: calc(var(--spacing) * 24);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
+  .left-6 {
+    left: calc(var(--spacing) * 6);
+  }
+  .left-8 {
+    left: calc(var(--spacing) * 8);
   }
   .-z-10 {
     z-index: calc(10 * -1);
@@ -314,6 +341,18 @@
   }
   .flex-2 {
     flex: 2;
+  }
+  .scale-80 {
+    --tw-scale-x: 80%;
+    --tw-scale-y: 80%;
+    --tw-scale-z: 80%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-90 {
+    --tw-scale-x: 90%;
+    --tw-scale-y: 90%;
+    --tw-scale-z: 90%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -741,6 +780,21 @@
     }
   }
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -841,6 +895,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
